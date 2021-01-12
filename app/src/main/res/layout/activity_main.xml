@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/backImage"
+        android:layout_width="410dp"
+        android:layout_height="264dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/king"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <ImageView
+        android:id="@+id/imageUser"
+        android:layout_width="88dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/alex"
+        app:layout_constraintBottom_toBottomOf="@+id/backImage"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/backImage"
+        app:layout_constraintVertical_bias="0.402"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageLocation"
+        android:layout_width="18dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/location"
+        app:layout_constraintTop_toBottomOf="@+id/backImage"
+        app:srcCompat="@android:drawable/ic_menu_mylocation" />
+
+    <ImageView
+        android:id="@+id/imageMami"
+        android:layout_width="69dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/king"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Loris Flopper"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/imageUser" />
+
+    <TextView
+        android:id="@+id/bithDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="17/01/1999"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UK, KingDom"
+        app:layout_constraintBottom_toBottomOf="@+id/imageLocation"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/nameMami"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/description_mami"
+        app:layout_constraintEnd_toEndOf="@+id/description_mami"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/description_mami" />
+
+    <TextView
+        android:id="@+id/description_mami"
+        android:layout_width="282dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:text="dsfsdf dsfdfhgt fgyghg fgfdhhgdfhfghdfg fgdfg fdggdfg ghghs fdgs"
+        app:layout_constraintBottom_toBottomOf="@+id/imageMami"
+        app:layout_constraintStart_toEndOf="@+id/imageMami" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="32dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/bithDay"
+        tools:layout_editor_absoluteX="-1dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="397dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
