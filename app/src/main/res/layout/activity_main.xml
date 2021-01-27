@@ -1,126 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/backImage"
-        android:layout_width="410dp"
-        android:layout_height="264dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/king"
+        android:id="@+id/backimage"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        app:srcCompat="@drawable/king" />
 
     <ImageView
-        android:id="@+id/imageUser"
-        android:layout_width="88dp"
-        android:layout_height="92dp"
-        android:layout_marginStart="12dp"
-        android:src="@drawable/alex"
-        app:layout_constraintBottom_toBottomOf="@+id/backImage"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/backImage"
-        app:layout_constraintVertical_bias="0.402"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/imageLocation"
-        android:layout_width="18dp"
-        android:layout_height="21dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/location"
-        app:layout_constraintTop_toBottomOf="@+id/backImage"
-        app:srcCompat="@android:drawable/ic_menu_mylocation" />
-
-    <ImageView
-        android:id="@+id/imageMami"
-        android:layout_width="69dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="32dp"
-        android:src="@drawable/king"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:id="@+id/imageView"
+        android:layout_width="149dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/backimage"
+        app:srcCompat="@drawable/alex"
+        tools:layout_editor_absoluteX="16dp" />
 
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/peusdo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        android:text="Loris Flopper"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/imageUser" />
-
-    <TextView
-        android:id="@+id/bithDay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="17/01/1999"
-        app:layout_constraintStart_toStartOf="@+id/name"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
-
-    <TextView
-        android:id="@+id/location"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="UK, KingDom"
-        app:layout_constraintBottom_toBottomOf="@+id/imageLocation"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3" />
-
-    <TextView
-        android:id="@+id/nameMami"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="92dp"
+        android:layout_marginStart="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/description_mami"
-        app:layout_constraintEnd_toEndOf="@+id/description_mami"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/description_mami" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/description_mami"
-        android:layout_width="282dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="16dp"
-        android:text="dsfsdf dsfdfhgt fgyghg fgfdhhgdfhfghdfg fgdfg fdggdfg ghghs fdgs"
-        app:layout_constraintBottom_toBottomOf="@+id/imageMami"
-        app:layout_constraintStart_toEndOf="@+id/imageMami" />
-
-    <View
-        android:id="@+id/divider"
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="32dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintTop_toBottomOf="@+id/bithDay"
-        tools:layout_editor_absoluteX="-1dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="16dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="397dp" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="0dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida quam ipsum, vel finibus tellus faucibus aliquet. Curabitur feugiat, justo vel tincidunt auctor, ante magna blandit dui, nec commodo libero nulla eu leo. Pellentesque eu ultrices elit. Vivamus dolor lectus, tempus eget sapien vitae, consectetur cursus mi. Aenean ultrices lacus eget libero mattis tincidunt. Quisque vitae consectetur lacus. Ut eget vestibulum libero.  Sed venenatis mi id enim dignissim, sit amet suscipit ante tristique. Nam ornare lobortis sapien sed rutrum. Etiam posuere lacus vitae orci viverra, ut varius odio volutpat. Nullam sagittis, purus vitae tincidunt tristique, libero elit vestibulum diam, quis dapibus nunc mi nec odio. Phasellus vel nunc ipsum. Nam hendrerit lectus eu pharetra tristique. Proin vestibulum sapien a viverra vulputate. Duis ultrices nec urna eget ullamcorper. Etiam semper facilisis lorem, viverra placerat ex dapibus sed.  Aenean sit amet urna nibh. Integer ante mauris, euismod vitae dui vitae, sagittis sagittis justo. Maecenas quis nisl fringilla, vulputate mi eget, pharetra turpis. Quisque ultricies est a mi euismod, quis finibus risus ultricies. Praesent aliquam enim at quam porttitor eleifend. Nulla consequat, eros sed bibendum pharetra, purus purus malesuada urna, sed dictum lectus augue quis erat. Nam ultrices auctor luctus. Cras mattis arcu ipsum, ac suscipit mi scelerisque ut. Suspendisse nec malesuada lorem, nec varius enim. Integer accumsan elit nec cursus volutpat. Nam porta metus lectus, et rhoncus augue tempus a. Nunc accumsan enim ac varius auctor.  In sit amet tortor pharetra eros sollicitudin tempus vel non turpis. Fusce commodo urna mi, nec tincidunt urna fermentum eget. Vivamus malesuada, urna non pulvinar ultrices, metus metus convallis mi, nec porttitor urna ligula non mauris. Suspendisse vitae malesuada ante. Vestibulum non sagittis neque. Duis sodales aliquet placerat. Quisque ornare nunc ac ex mollis vehicula. Cras placerat eget tellus sed feugiat. Pellentesque eu accumsan felis. Sed interdum, nisl eu ornare pellentesque, odio mi mollis nulla, ut blandit magna orci in nulla.  Nunc nec finibus lorem, ac placerat nunc. Morbi vitae dignissim felis. Cras molestie magna lorem, et accumsan odio rhoncus ut. Vivamus justo dui, tincidunt nec posuere pharetra, suscipit quis mi. Sed interdum, ante eu posuere tempor, metus nibh dignissim tellus, eu bibendum mauris turpis sit amet quam. Nunc non congue ex, id luctus quam. In ornare placerat ligula. Nullam porta viverra placerat. Suspendisse facilisis ac ante sed commodo. Integer dignissim sapien quis porta condimentum. Curabitur gravida sem tortor, ut blandit mauris semper eu. In consequat sapien nisl, eu convallis dui finibus et. Cras nec diam eget ligula euismod consectetur. Mauris rutrum posuere ipsum nec laoreet. Mauris orci neque, rutrum sed scelerisque sed, varius in velit."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.motion.widget.MotionLayout>
