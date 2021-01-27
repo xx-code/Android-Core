@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item   android:id="@+id/new_think"
+            android:icon="@mipmap/ic_launcher"
+            android:title="le penseur pensé"
+            app:showAsAction="ifRoom"/>
+    <item   android:id="@+id/help"
+            android:title="@string/app_name"/>
+    <group android:checkableBehavior="single">
+        <item   android:id="@+id/first_check"
+                android:title="four tou" />
+        <item   android:id="@+id/second_check"
+            android:title="Aillaou" />
+    </group>
+</menu>
