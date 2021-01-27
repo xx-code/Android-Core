@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Attaque des titans",
+    "description": "Les titans c'est geant",
+    "image": "attack_of_titans"
+  },
+  {
+    "id": 2,
+    "name": "One Piece",
+    "description": "vive le tresor mais djo la puissance des gars",
+    "image": "one_piece"
+  },
+  {
+    "id": 3,
+    "name": "My Hereo Academia",
+    "description": "les super hero avec pouvoir",
+    "image": "my_hero_academia"
+  },
+  {
+    "id": 4,
+    "name": "Naruto",
+    "description": "naruto surpuissant mille",
+    "image": "naruto"
+  },
+  {
+    "id": 5,
+    "name": "Dragon Ball Z",
+    "description": "cherchons le sept boules de cristal",
+    "image": "dragon_ball"
+  },
+  {
+    "id": 6,
+    "name": "Berserk",
+    "description": "je vais me vanger ",
+    "image": "berserk"
+  },
+  {
+    "id": 7,
+    "name": "Death Note",
+    "description": "je vais enlever toute trace de criminel sur terre",
+    "image": "death_note"
+  },
+  {
+    "id": 8,
+    "name": "Cobra",
+    "description": "mon bras ahh! tu ne vois pas cobra mon bras",
+    "image": "cobra"
+  },
+  {
+    "id": 9,
+    "name": "Cowboy BeBop",
+    "description": "bep bep je ne connais vraiment pas ce manga",
+    "image": "cowboy_bebop"
+  }
+]
