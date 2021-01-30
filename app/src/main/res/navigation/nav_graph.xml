@@ -9,14 +9,15 @@
         android:id="@+id/home2"
         android:name="com.learning.androidcore.home"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_home2_to_second"
-            app:destination="@id/second" />
-    </fragment>
+        tools:layout="@layout/fragment_home"/>
     <fragment
         android:id="@+id/second"
         android:name="com.learning.androidcore.Second"
         android:label="fragment_second"
-        tools:layout="@layout/fragment_second" />
+        tools:layout="@layout/fragment_second"/>
+    <fragment
+        android:id="@+id/third"
+        android:name="com.learning.androidcore.third"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" />
 </navigation>

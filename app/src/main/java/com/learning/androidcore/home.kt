@@ -27,9 +27,6 @@ class home : Fragment() {
 
         goButton = view.findViewById(R.id.gogButton)
 
-        goButton.setOnClickListener {
-            view.findNavController().navigate(R.id.action_home2_to_second)
-        }
 
         return view
     }
